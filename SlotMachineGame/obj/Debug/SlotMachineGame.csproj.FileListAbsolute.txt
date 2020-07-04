@@ -1,0 +1,20 @@
+F:\C# Projects\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.exe.config
+F:\C# Projects\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.exe
+F:\C# Projects\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.pdb
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csprojAssemblyReference.cache
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.Form1.resources
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.Properties.Resources.resources
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csproj.GenerateResource.cache
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csproj.CoreCompileInputs.cache
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.exe
+F:\C# Projects\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.pdb
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.exe.config
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.exe
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\bin\Debug\SlotMachineGame.pdb
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csprojAssemblyReference.cache
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.Form1.resources
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.Properties.Resources.resources
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csproj.GenerateResource.cache
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.csproj.CoreCompileInputs.cache
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.exe
+D:\Downloads\SlotMachineGame\SlotMachineGame\SlotMachineGame\obj\Debug\SlotMachineGame.pdb
