@@ -99,5 +99,20 @@
   <ItemGroup>
     <None Include="Sounds\insertCoin.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\clink.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\gameOver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\insertCoin.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\jackpot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\backgroundMusic.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,8 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="backgroundMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\backgroundMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="clink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\clink.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\gameOver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="insertCoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\insertCoin.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jackpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\jackpot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\lemon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

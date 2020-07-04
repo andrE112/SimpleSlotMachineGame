@@ -20,6 +20,7 @@ namespace SlotMachineGame
         private int time=0;
         private string[] check= { "", "", "" };
         private int points = 100;
+        private SoundPlayer background = new SoundPlayer(Properties.Resources.backgroundMusic);
 
 
         public Form1()
@@ -32,7 +33,9 @@ namespace SlotMachineGame
 
         private void tmrSlot1_Tick(object sender, EventArgs e)
         {
-            counter+=10;
+            btnSpin.Enabled = false;
+            SoundPlayer clink = new SoundPlayer(Properties.Resources.clink);
+            counter +=10;
             if (counter >= time)
             {
                 check[0] = slot1.Stop();
@@ -52,10 +55,14 @@ namespace SlotMachineGame
             if (counter >= time * 3)
             {
                 check[2] = slot3.Stop();
+                btnSpin.Enabled = true;
                 tmrSlot1.Stop();
                 counter = 0;
                 if(check[0]==check[1] && check[1] == check[2]){
+                    SoundPlayer jackpot = new SoundPlayer(Properties.Resources.jackpot);
+                    jackpot.Play();
                     MessageBox.Show("JACKPOT!");
+                    background.PlayLooping();
                     points += 100;
                     pointsLabel.Text = "Points: " + points;
                 }
@@ -64,7 +71,10 @@ namespace SlotMachineGame
                     //MessageBox.Show("NO JACKPOT!");
                     pointsLabel.Text = "Points: " + points;
                     if (points<=0){
+                        SoundPlayer gameover = new SoundPlayer(Properties.Resources.gameOver);
+                        gameover.Play();
                         MessageBox.Show("YOU RAN OUT OF POINTS!");
+                        background.PlayLooping();
                         points = 100;
                         pointsLabel.Text = "Points: " + points;
                     }
@@ -82,12 +92,15 @@ namespace SlotMachineGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            background.PlayLooping();
         }
 
         private void btnSpin_Click(object sender, EventArgs e)
         {
             points -= 10;
             pointsLabel.Text = "Points: " + points;
+            //SoundPlayer snd = new SoundPlayer(Properties.Resources.insertCoin);
+            //snd.Play();
             Random rand = new Random();
             time = rand.Next(100, 1000);
             tmrSlot1.Start();
