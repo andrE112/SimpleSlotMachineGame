@@ -47,6 +47,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,9 +79,10 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(25, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 201);
+            this.panel1.Size = new System.Drawing.Size(776, 136);
             this.panel1.TabIndex = 4;
             // 
             // pointsLabel
@@ -179,42 +183,62 @@
             // panel2
             // 
             this.panel2.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
-            this.panel2.Location = new System.Drawing.Point(25, 404);
+            this.panel2.Location = new System.Drawing.Point(25, 467);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 225);
+            this.panel2.Size = new System.Drawing.Size(776, 161);
             this.panel2.TabIndex = 5;
             // 
             // panel3
             // 
             this.panel3.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
-            this.panel3.Location = new System.Drawing.Point(25, 201);
+            this.panel3.Location = new System.Drawing.Point(25, 136);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(61, 203);
+            this.panel3.Size = new System.Drawing.Size(61, 331);
             this.panel3.TabIndex = 13;
             // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
-            this.panel4.Location = new System.Drawing.Point(714, 201);
+            this.panel4.Location = new System.Drawing.Point(714, 136);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(87, 203);
+            this.panel4.Size = new System.Drawing.Size(87, 331);
             this.panel4.TabIndex = 14;
             // 
             // panel5
             // 
             this.panel5.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
-            this.panel5.Location = new System.Drawing.Point(500, 201);
+            this.panel5.Location = new System.Drawing.Point(500, 136);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(15, 203);
+            this.panel5.Size = new System.Drawing.Size(15, 331);
             this.panel5.TabIndex = 15;
             // 
             // panel6
             // 
             this.panel6.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
-            this.panel6.Location = new System.Drawing.Point(285, 201);
+            this.panel6.Location = new System.Drawing.Point(285, 136);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(15, 203);
+            this.panel6.Size = new System.Drawing.Size(15, 331);
             this.panel6.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(41, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(715, 114);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Slot Machine";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Red;
+            this.panel7.Location = new System.Drawing.Point(85, 301);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(630, 5);
+            this.panel7.TabIndex = 17;
             // 
             // Form1
             // 
@@ -222,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1047, 628);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.btnSpin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
@@ -242,6 +267,8 @@
             this.Name = "Form1";
             this.Text = "Slot Machine";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -272,6 +299,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 
