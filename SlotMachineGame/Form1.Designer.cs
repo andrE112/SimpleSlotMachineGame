@@ -29,19 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tmrSlot1 = new System.Windows.Forms.Timer(this.components);
             this.btnSpin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pointsLabel = new System.Windows.Forms.Label();
+            this.betBox = new System.Windows.Forms.TextBox();
+            this.betLabel = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.betBox = new System.Windows.Forms.TextBox();
-            this.betLabel = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,37 +62,59 @@
             // 
             // btnSpin
             // 
-            this.btnSpin.Location = new System.Drawing.Point(884, 267);
+            this.btnSpin.BackColor = System.Drawing.Color.Moccasin;
+            this.btnSpin.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSpin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSpin.Location = new System.Drawing.Point(841, 276);
             this.btnSpin.Name = "btnSpin";
-            this.btnSpin.Size = new System.Drawing.Size(151, 56);
+            this.btnSpin.Size = new System.Drawing.Size(194, 76);
             this.btnSpin.TabIndex = 2;
             this.btnSpin.Text = "SPIN";
-            this.btnSpin.UseVisualStyleBackColor = true;
+            this.btnSpin.UseVisualStyleBackColor = false;
             this.btnSpin.Click += new System.EventHandler(this.btnSpin_Click);
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
             this.panel1.Location = new System.Drawing.Point(25, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 201);
             this.panel1.TabIndex = 4;
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(25, 404);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 196);
-            this.panel2.TabIndex = 5;
-            // 
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
-            this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pointsLabel.Location = new System.Drawing.Point(877, 164);
+            this.pointsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pointsLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.pointsLabel.Location = new System.Drawing.Point(834, 173);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(176, 37);
+            this.pointsLabel.Size = new System.Drawing.Size(187, 37);
             this.pointsLabel.TabIndex = 10;
             this.pointsLabel.Text = "Points: 100";
+            // 
+            // betBox
+            // 
+            this.betBox.BackColor = System.Drawing.Color.Moccasin;
+            this.betBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.betBox.Location = new System.Drawing.Point(841, 250);
+            this.betBox.Name = "betBox";
+            this.betBox.Size = new System.Drawing.Size(194, 20);
+            this.betBox.TabIndex = 11;
+            this.betBox.Text = "10";
+            this.betBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // betLabel
+            // 
+            this.betLabel.AutoSize = true;
+            this.betLabel.BackColor = System.Drawing.Color.Transparent;
+            this.betLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.betLabel.Location = new System.Drawing.Point(834, 210);
+            this.betLabel.Name = "betLabel";
+            this.betLabel.Size = new System.Drawing.Size(77, 37);
+            this.betLabel.TabIndex = 12;
+            this.betLabel.Text = "Bet:";
             // 
             // pictureBox6
             // 
@@ -149,41 +176,69 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // betBox
+            // panel2
             // 
-            this.betBox.Location = new System.Drawing.Point(884, 241);
-            this.betBox.Name = "betBox";
-            this.betBox.Size = new System.Drawing.Size(151, 20);
-            this.betBox.TabIndex = 11;
-            this.betBox.Text = "10";
+            this.panel2.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel2.Location = new System.Drawing.Point(25, 404);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(776, 225);
+            this.panel2.TabIndex = 5;
             // 
-            // betLabel
+            // panel3
             // 
-            this.betLabel.AutoSize = true;
-            this.betLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.betLabel.Location = new System.Drawing.Point(877, 201);
-            this.betLabel.Name = "betLabel";
-            this.betLabel.Size = new System.Drawing.Size(73, 37);
-            this.betLabel.TabIndex = 12;
-            this.betLabel.Text = "Bet:";
+            this.panel3.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel3.Location = new System.Drawing.Point(25, 201);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(61, 203);
+            this.panel3.TabIndex = 13;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel4.Location = new System.Drawing.Point(714, 201);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(87, 203);
+            this.panel4.TabIndex = 14;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel5.Location = new System.Drawing.Point(500, 201);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(15, 203);
+            this.panel5.TabIndex = 15;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::SlotMachineGame.Properties.Resources.metal;
+            this.panel6.Location = new System.Drawing.Point(285, 201);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(15, 203);
+            this.panel6.TabIndex = 16;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1047, 628);
+            this.Controls.Add(this.btnSpin);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.betLabel);
             this.Controls.Add(this.betBox);
             this.Controls.Add(this.pointsLabel);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnSpin);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Slot Machine";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -205,7 +260,6 @@
         private System.Windows.Forms.Timer tmrSlot1;
         private System.Windows.Forms.Button btnSpin;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -213,6 +267,11 @@
         private System.Windows.Forms.Label pointsLabel;
         private System.Windows.Forms.TextBox betBox;
         private System.Windows.Forms.Label betLabel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 

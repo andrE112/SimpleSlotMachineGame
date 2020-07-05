@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pictures\icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -113,6 +116,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Sounds\backgroundMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\metal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\spin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Slots2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
