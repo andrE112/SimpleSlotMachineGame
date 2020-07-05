@@ -20,6 +20,7 @@ namespace SlotMachineGame
         private int time=0;
         private string[] check= { "", "", "" };
         private int points = 100;
+        private int bet = 10;
         private SoundPlayer background = new SoundPlayer(Properties.Resources.backgroundMusic);
 
 
@@ -34,6 +35,7 @@ namespace SlotMachineGame
         private void tmrSlot1_Tick(object sender, EventArgs e)
         {
             btnSpin.Enabled = false;
+            betBox.Enabled = false;
             SoundPlayer clink = new SoundPlayer(Properties.Resources.clink);
             counter +=10;
             if (counter >= time)
@@ -56,6 +58,7 @@ namespace SlotMachineGame
             {
                 check[2] = slot3.Stop();
                 btnSpin.Enabled = true;
+                betBox.Enabled = true;
                 tmrSlot1.Stop();
                 counter = 0;
                 if(check[0]==check[1] && check[1] == check[2]){
@@ -63,7 +66,7 @@ namespace SlotMachineGame
                     jackpot.Play();
                     MessageBox.Show("JACKPOT!");
                     background.PlayLooping();
-                    points += 100;
+                    points += bet * 2;
                     pointsLabel.Text = "Points: " + points;
                 }
                 else
@@ -97,13 +100,20 @@ namespace SlotMachineGame
 
         private void btnSpin_Click(object sender, EventArgs e)
         {
-            points -= 10;
-            pointsLabel.Text = "Points: " + points;
-            //SoundPlayer snd = new SoundPlayer(Properties.Resources.insertCoin);
-            //snd.Play();
-            Random rand = new Random();
-            time = rand.Next(100, 1000);
-            tmrSlot1.Start();
+            bet = int.Parse(betBox.Text);
+            if (bet > points)
+            {
+                MessageBox.Show("You can't bet more points than what you have! Change your bet.");
+            }
+            else
+            {
+                points -= bet;
+                pointsLabel.Text = "Points: " + points;
+                Random rand = new Random();
+                time = rand.Next(100, 1000);
+                tmrSlot1.Start();
+            }
+            
         }
     }
 }

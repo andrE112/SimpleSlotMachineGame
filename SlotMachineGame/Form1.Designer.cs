@@ -40,6 +40,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.betBox = new System.Windows.Forms.TextBox();
+            this.betLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +57,7 @@
             // 
             // btnSpin
             // 
-            this.btnSpin.Location = new System.Drawing.Point(884, 276);
+            this.btnSpin.Location = new System.Drawing.Point(884, 267);
             this.btnSpin.Name = "btnSpin";
             this.btnSpin.Size = new System.Drawing.Size(151, 56);
             this.btnSpin.TabIndex = 2;
@@ -147,11 +149,31 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // betBox
+            // 
+            this.betBox.Location = new System.Drawing.Point(884, 241);
+            this.betBox.Name = "betBox";
+            this.betBox.Size = new System.Drawing.Size(151, 20);
+            this.betBox.TabIndex = 11;
+            this.betBox.Text = "10";
+            // 
+            // betLabel
+            // 
+            this.betLabel.AutoSize = true;
+            this.betLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betLabel.Location = new System.Drawing.Point(877, 201);
+            this.betLabel.Name = "betLabel";
+            this.betLabel.Size = new System.Drawing.Size(73, 37);
+            this.betLabel.TabIndex = 12;
+            this.betLabel.Text = "Bet:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 628);
+            this.Controls.Add(this.betLabel);
+            this.Controls.Add(this.betBox);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -189,6 +211,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label pointsLabel;
+        private System.Windows.Forms.TextBox betBox;
+        private System.Windows.Forms.Label betLabel;
     }
 }
 
