@@ -66,7 +66,7 @@ namespace SlotMachineGame
                     jackpot.Play();
                     MessageBox.Show("JACKPOT!");
                     background.PlayLooping();
-                    points += bet * 2;
+                    Score();
                     pointsLabel.Text = "Points: " + points;
                 }
                 else
@@ -114,7 +114,22 @@ namespace SlotMachineGame
                 time = rand.Next(100, 1000);
                 tmrSlot1.Start();
             }
-            
+        }
+
+        private void Score()
+        {
+            if (check[0] == "Seven")
+            {
+                points += bet * 2;
+            }
+            else if (check[0] == "Diamond")
+            {
+                points += Convert.ToInt32(bet * 1.5);
+            }
+            else
+            {
+                points += Convert.ToInt32(10 * 1.25);
+            }
         }
     }
 }
