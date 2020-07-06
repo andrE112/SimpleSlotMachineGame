@@ -132,7 +132,7 @@ public void DisplayNewHighScore()
 ```
 Оваа функција ја користам за читање на highscore од binary file и прикажување на истиот во играта.
 
-3.За playback на музика ја користам готовата класа SoundPlayer од System.Media namespace.
+3. За playback на музика ја користам готовата класа SoundPlayer од System.Media namespace.
 
 ## Опис на класата Slot.cs
 Во оваа класа се чуваат два oictureBox, integer scroll кој се користи за детекција на моментална слика која е во сред од слотот, константен integer SPEED која е брзината на движење на слотовите, bool running кој се користи за проверка дали се движи слотот и еден string result во кој го чувам резултатот на слотот при крај на вртењето.
