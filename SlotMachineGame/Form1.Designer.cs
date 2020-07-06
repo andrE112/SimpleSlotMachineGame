@@ -33,6 +33,7 @@
             this.tmrSlot1 = new System.Windows.Forms.Timer(this.components);
             this.btnSpin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pointsLabel = new System.Windows.Forms.Label();
             this.betBox = new System.Windows.Forms.TextBox();
             this.betLabel = new System.Windows.Forms.Label();
@@ -47,8 +48,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.labelHighscore = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -68,7 +69,7 @@
             this.btnSpin.BackColor = System.Drawing.Color.Moccasin;
             this.btnSpin.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSpin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSpin.Location = new System.Drawing.Point(841, 276);
+            this.btnSpin.Location = new System.Drawing.Point(818, 239);
             this.btnSpin.Name = "btnSpin";
             this.btnSpin.Size = new System.Drawing.Size(194, 76);
             this.btnSpin.TabIndex = 2;
@@ -85,13 +86,25 @@
             this.panel1.Size = new System.Drawing.Size(776, 136);
             this.panel1.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(41, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(715, 114);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Slot Machine";
+            // 
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
             this.pointsLabel.BackColor = System.Drawing.Color.Transparent;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pointsLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.pointsLabel.Location = new System.Drawing.Point(834, 173);
+            this.pointsLabel.Location = new System.Drawing.Point(811, 136);
             this.pointsLabel.Name = "pointsLabel";
             this.pointsLabel.Size = new System.Drawing.Size(187, 37);
             this.pointsLabel.TabIndex = 10;
@@ -101,7 +114,7 @@
             // 
             this.betBox.BackColor = System.Drawing.Color.Moccasin;
             this.betBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.betBox.Location = new System.Drawing.Point(841, 250);
+            this.betBox.Location = new System.Drawing.Point(818, 213);
             this.betBox.Name = "betBox";
             this.betBox.Size = new System.Drawing.Size(194, 20);
             this.betBox.TabIndex = 11;
@@ -114,7 +127,7 @@
             this.betLabel.BackColor = System.Drawing.Color.Transparent;
             this.betLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.betLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.betLabel.Location = new System.Drawing.Point(834, 210);
+            this.betLabel.Location = new System.Drawing.Point(811, 173);
             this.betLabel.Name = "betLabel";
             this.betLabel.Size = new System.Drawing.Size(77, 37);
             this.betLabel.TabIndex = 12;
@@ -220,18 +233,6 @@
             this.panel6.Size = new System.Drawing.Size(15, 331);
             this.panel6.TabIndex = 16;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(41, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(715, 114);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Slot Machine";
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Red;
@@ -240,12 +241,25 @@
             this.panel7.Size = new System.Drawing.Size(630, 5);
             this.panel7.TabIndex = 17;
             // 
+            // labelHighscore
+            // 
+            this.labelHighscore.AutoSize = true;
+            this.labelHighscore.BackColor = System.Drawing.Color.Transparent;
+            this.labelHighscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHighscore.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.labelHighscore.Location = new System.Drawing.Point(811, 318);
+            this.labelHighscore.Name = "labelHighscore";
+            this.labelHighscore.Size = new System.Drawing.Size(159, 31);
+            this.labelHighscore.TabIndex = 18;
+            this.labelHighscore.Text = "HighScore:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1047, 628);
+            this.Controls.Add(this.labelHighscore);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.btnSpin);
             this.Controls.Add(this.panel2);
@@ -301,6 +315,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label labelHighscore;
     }
 }
 
